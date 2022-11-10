@@ -1,19 +1,33 @@
 .header{
     width: 100%;
-    position: -webkit-sticky;
     color: white;
     z-index: 1;
-    padding: 1rem;
+    padding: .2rem;
     background: rgb(0, 0, 0,.3);
 }
 
-.menu-top {
-    padding: 8px 0;
+.itens{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: right;
-    margin-right: 2rem;
 }
+.menu{
+    width: 100%;
+    background: #000;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+.links a{
+   color: #fff;
+   text-decoration: none;
+}
+
 .search-box{
     width: 180px;
     background:transparent;
@@ -23,32 +37,27 @@
 }
 
 .search-text{
-    width: 150px;
+    width: 300px;
     border-radius: 30px;
     padding: .4rem ;
     background:transparent;
-    border: 1px solid rgb(199, 199, 199) ;
-    color: #000;
+    border: 1px solid #fff ;
+    color: #fff;
     font-size: 14px;
     outline: unset;
 }
 
 .search-btn{
-    margin-left: -1.5rem;
+    margin-left: -5.5rem;
 }
-.search-btn i{
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+
+#dropdown-menu{
+    background: #000;
 }
 
 #dropdown-basic{
-    border-radius: 50%;
-    width: 45px;
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: transparent;
+    border: none;
 }
 
 .logo{
@@ -56,13 +65,3 @@
     font-weight: bold;
 }
 
-.links a{
-    text-decoration: none;
-    margin-left:1rem;
-    color: #fff;
-    font-size: 14px;
-}
-.links a:hover{
-    color: #fff;
-    opacity: .5;
-}
