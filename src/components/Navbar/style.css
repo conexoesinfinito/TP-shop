@@ -3,7 +3,7 @@
     color: white;
     z-index: 1;
     padding: .2rem;
-    background: rgb(0, 0, 0,.3);
+    background: #e41a15;
 }
 
 .itens{
@@ -28,6 +28,7 @@
    text-decoration: none;
 }
 
+
 .search-box{
     width: 180px;
     background:transparent;
@@ -51,17 +52,16 @@
     margin-left: -5.5rem;
 }
 
-#dropdown-menu{
-    background: #000;
-}
-
 #dropdown-basic{
     background: transparent;
     border: none;
 }
-
 .logo{
     font-size: 22px;
     font-weight: bold;
 }
 
+#drop-card{
+    background: #000;
+    color: #fff;
+}

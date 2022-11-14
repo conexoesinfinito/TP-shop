@@ -1,8 +1,6 @@
 // import React from "react";
 import React, { useState } from 'react';
 import "./style.css";
-import { HiOutlineSearchCircle } from "react-icons/hi";
-import { AiOutlineUser } from "react-icons/ai";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "gatsby";
 
@@ -29,7 +27,7 @@ const Navbar = () => {
         </div>
         <Dropdown>
           <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-            LOGIN
+            LOGIN / REGISTER
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item href="#action-1">Login</Dropdown.Item>
@@ -42,23 +40,27 @@ const Navbar = () => {
       <div className='menu'>
         <div className='container'>
           <div className='links'>
+          <Link to="/">HOME</Link>
           <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         PRODUTOS
       </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Camisas</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Calças</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Tenis</Dropdown.Item>
-        <Dropdown.Item href="#/action-4">Tenis</Dropdown.Item>
-        <Dropdown.Item href="#/action-5">Tenis</Dropdown.Item>
-        <Dropdown.Item href="#/action-6">Tenis</Dropdown.Item>
+      <Dropdown.Menu id='drop-card'>
+        <Dropdown.Item><Link to="#produtos">COMPUTADORES</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">MONITORES</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">MOUSE</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">SOFÁS</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">SKATES</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">SMARTPHONES</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">PLAYSTATION</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">VIDEOS-JOGOS</Link></Dropdown.Item>
+        <Dropdown.Item><Link to="#">OUTROS</Link></Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-      <Link to="/produtos/produtos">PROMOÇÕES</Link>
-      <Link to="/produtos/produtos">NOVIDADES</Link>
-      <Link to="/produtos/produtos">CRIAR CONTA</Link>
-      <Link to="/produtos/produtos">INICIAR SESSÃO</Link>
+      <Link to="#">PROMOÇÕES</Link>
+      <Link to="#">NOVIDADES</Link>
+      <Link to="#">LOJAS</Link>
+      <Link to="#">CONTACT</Link>
       </div>
       </div>
       </div>
