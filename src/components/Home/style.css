@@ -10,12 +10,22 @@
 
 }
 .it1{
-    background-image: url(../../images/beck1.jpg);
+    background-image: url(../../assets/background1.png);
     background-size: cover;
     background-position: center;
 }
 .it2{
-    background-image: url(../../images/beck2.jpg);
+    background-image: url(../../assets/background2.png);
+    background-size: cover;
+    background-position: center;
+}
+.it3{
+    background-image: url(../../assets/background3.png);
+    background-size: cover;
+    background-position: center;
+}
+.it4{
+    background-image: url(../../assets/background5.png);
     background-size: cover;
     background-position: center;
 }
@@ -24,22 +34,19 @@
     display: flex;
     gap: 1rem;
 }
-.box-bt > h2{
+
+.button{
+    width: 150px;
+    height: 50px;
+    margin-top: 2rem;
+    background: transparent;
+    border: 1.5px solid #fff;
     text-align: center;
-    color: white;
-    
+    color: #fff;
+    cursor: pointer;
 }
 
-.bt{
-    width: 150px;
-    padding: 1rem;
+.button:hover{
+    background: linear-gradient(90deg, rgba(194,56,56,1) 0%, rgba(200,133,16,1) 91%);
     border: none;
-    margin-top: 2rem;
-    transition: .3s ease;
-    
-}
-.bt:hover{
-   background: transparent;
-   border: 1px solid #fff;
-   color: #fff;
 }

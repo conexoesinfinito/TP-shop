@@ -1,0 +1,7 @@
+.p-sport{
+    width: 100%;
+    padding: 50px 0;
+}
+.p-sport .row{
+   gap: 1rem;
+}

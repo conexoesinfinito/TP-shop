@@ -1,0 +1,78 @@
+.header{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(194,56,56,1) 0%, rgba(200,133,16,1) 91%);
+    padding: .5rem 0;
+}
+
+
+.logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo:hover{
+    color: #fff;
+}
+
+.menu{
+    background: #000;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+  color: #000;
+ opacity: .8;
+}
+
+.me-auto {
+    margin-left: auto;
+}
+
+.links .dropdown-menu {
+    --bs-dropdown-bg: #000;
+    --bs-dropdown-link-hover-bg: rgb(255, 0, 0,.8);
+    
+
+   
+}
+
+.btn-outline-success {
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: none;
+}
+
+.nav-link {
+    color: #000;
+}

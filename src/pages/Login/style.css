@@ -1,0 +1,137 @@
+.login{
+    background-image: url(../../assets/beck-ecommerce.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right:15px ;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.img-box{
+    background-color: rgba(255, 255, 255, .5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.form-box p{
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.form-box p a{
+    color: rgba(194,56,56,1);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.form-box p a:hover{
+    text-decoration:underline;
+}
+
+
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .input-group{
+margin-bottom: 1.5rem;
+}
+
+
+form .input-group label{
+color: #3d3d3d;
+font-weight: bold;
+display: block;
+margin-bottom: .5rem;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(255, 255, 255, .32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 20px;
+    font-size: 15px;
+    color: #616161;
+    transition: all .4s ease;
+}
+
+form .input-group input:focus{
+    border-color: rgba(194,56,56,1);
+}
+
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    background: linear-gradient(90deg, rgba(194,56,56,1) 0%, rgba(200,133,16,1) 91%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: .3s ease;
+}
+form .input-group button:hover{
+  opacity: .5;
+}
+
+@media(max-width:930px){
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+
+    .form-box{
+        width: 100%;
+        border-radius: 00px;
+    }
+}
+
+@media(max-width:500px){
+    .w50{
+        width: 100%;
+    }
+}
