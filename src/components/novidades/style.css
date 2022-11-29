@@ -1,0 +1,20 @@
+.novidades{
+    width: 100%;
+    padding: 60px 0;
+}
+.novidades h2{
+    margin-bottom: 1.5rem;
+}
+.novidades .row{
+    gap: 1rem;
+}
+
+.div{
+    width: 80%;
+    height: 200px;
+    background: #000;
+}
+
+.novidades .card{
+    margin-left: 1rem;
+}

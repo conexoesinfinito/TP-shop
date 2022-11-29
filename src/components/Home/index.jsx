@@ -5,7 +5,7 @@ import {Carousel} from "react-bootstrap";
 const Home = () => {
   return (
     <>
-      <Carousel slide={false}>
+      <Carousel fade>
           <Carousel.Item>
             <div className="item it1">
               <h1>BEM VINDO A NOSSA LOJA</h1>

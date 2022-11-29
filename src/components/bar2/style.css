@@ -1,0 +1,11 @@
+.bar2{
+    width: 100%;
+}
+
+.bar2 .item{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

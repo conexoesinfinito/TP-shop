@@ -10,7 +10,7 @@ const Psport = () => {
     <div className='p-sport' id='sport'>
         <Container>
             <Row>
-                <h1>SPORTS</h1>
+                <h2>Sports</h2>
                 {sports.map((item) => (
 
             <div className='card'>

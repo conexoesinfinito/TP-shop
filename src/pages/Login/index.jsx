@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import iconE from '../../assets/icon-shop.svg'
-import Layout from '../../components/Layout'
+import { Link } from 'gatsby'
 
 
 const Login = () => {
@@ -26,6 +26,10 @@ const Login = () => {
                 <div class="input-group ">
                     <button>Entrar</button>
                 </div>
+                <div className='bt-voltar'>
+                <Link to='/'>voltar</Link>
+                </div>
+                
             </form>
         </div>
     </div>

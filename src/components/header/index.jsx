@@ -54,10 +54,8 @@ const Header = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#link"><Link to="#">PROMOÇÕES</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="#">NOVIDADES</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="#">SERVIÇOS</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="#">LOJAS</Link></Nav.Link>
-            <Nav.Link href="#link"><Link to="#">CONTACTO</Link></Nav.Link>
+            <Nav.Link href="#link"><Link to="/Contact">CONTACTO</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -11,7 +11,7 @@ const Phouse = () => {
 <div className='p-house' id='house'>
         <Container>
             <Row>
-                <h1>House</h1>
+                <h2>House</h2>
                 {house.map((item) => (
 
             <div className='card'>

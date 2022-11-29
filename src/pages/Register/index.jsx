@@ -38,6 +38,9 @@ const Register = () => {
                 <div class="input-group ">
                     <button>Cadastrar</button>
                 </div>
+                <div className='bt-voltar'>
+                <Link to='/'>voltar</Link>
+                </div>
             </form>
         </div>
     </div>

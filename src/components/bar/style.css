@@ -18,8 +18,8 @@
     background: transparent;
 }
 
-.it:hover {
-    opacity: .5; 
+.it:hover{
+    background:rgb(223, 113, 10) ;
     border: none;
 }
 .it a{

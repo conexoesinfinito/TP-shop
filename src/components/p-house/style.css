@@ -1,6 +1,7 @@
 .p-house{
     width: 100%;
     padding: 50px 0;
+    background:rgba(245,245,245,1);
 }
 
 .p-house .row{

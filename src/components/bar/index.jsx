@@ -26,7 +26,7 @@ const Bar = () => {
                     </Col>
                 <Col lg={2}>
                     <button className='it'>
-                    <Link to="/Sport">Game</Link>
+                    <Link to="#">Game</Link>
                     </button>
                     </Col>
                     

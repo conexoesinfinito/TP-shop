@@ -1,0 +1,142 @@
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(194,56,56,1) 0%, rgba(200,133,16,1) 91%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row{
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.contact .row .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.contact .row .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #c1ac9c;
+}
+
+.left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.left-side .details i{
+    font-size: 30px;
+    color: #d3712f;
+}
+.left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.left-side .details .text-one,
+.left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+
+
+.contact .row .right-side{
+    margin-left: 75px;
+}
+.contact .row .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #d3712f;
+}
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+   height: 100%;
+   width: 100%;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   background: #f0f1f8;
+   border-radius: 6px;
+   padding: 0 15px;
+   resize: none;
+}
+
+.right-side .message-box{
+    min-height: 6px;
+}
+
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+
+.right-side .butto input[type='button']{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background: #d3712f;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.right-side .butto input[type='button']:hover{
+    background: #c1ac9c;
+}
+
+
+@media(max-width:992px){
+    .right-side .input-box input,
+.right-side .input-box textarea{
+   height: 90%;
+   width: 90%;
+}
+.right-side{
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+.right-side p{
+    width: 90%;
+    text-align: center;
+}
+.right-side .topic-text{
+    text-align: center;
+}
+.right-side .butto{
+    margin-bottom: 2rem;
+}
+.contact .row .left-side::before {
+    display: none;
+    /* right: 45px;
+    top: 65%;
+    transform: rotate(90deg);
+    background: #c1ac9c; */
+}
+
+}
+
+
+
+
+
+
+
