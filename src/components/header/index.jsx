@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './style.css'
 import { Link } from "gatsby";
 import { Form, Button, Dropdown, Container, Row, Col} from 'react-bootstrap'
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
 
 const Header = () => {
+  const [searchTerm, setSearchTerm]=useState('');
   return (
     <>
        <div className='header'>
@@ -17,9 +18,12 @@ const Header = () => {
                 <Form className="d-flex">
                 <Form.Control
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search  "
                   className="me-2"
                   aria-label="Search"
+                  onChange={(event) =>{
+                    setSearchTerm(event.target.value);
+                  }}
                 />
                 <Button variant="outline-success">Search</Button>
               </Form>
