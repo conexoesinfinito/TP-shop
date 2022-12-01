@@ -1,7 +1,7 @@
 const techno=[
     {
         id:1,
-        imagem:'pc1.jpg',
+        imagem:'/technology/pc1.jpg',
         title:'Pc',
         oldPrice:10.000,
         newPrice:5000,
@@ -9,7 +9,7 @@ const techno=[
     },
     {
         id:2,
-        imagem:'technology/pc2.jpg',
+        imagem:'/technology/pc2.jpg',
         title:'Pc',
         oldPrice:10000,
         newPrice:5000,
@@ -17,7 +17,7 @@ const techno=[
     },
     {
         id:3,
-        imagem:'technology/pc3.jpg',
+        imagem:'/technology/pc3.jpg',
         title:'Pc',
         oldPrice:10000,
         newPrice:5000,
@@ -25,7 +25,7 @@ const techno=[
     },
     {
         id:4,
-        imagem:'technology/pc4.jpg',
+        imagem:'/technology/pc4.jpg',
         title:'Pc',
         oldPrice:10000,
         newPrice:5000,

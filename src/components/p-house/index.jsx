@@ -12,7 +12,8 @@ const Phouse = () => {
         <Container>
             <Row>
                 <h2>House</h2>
-                {house.map((item) => (
+                {house.map((item,index) => 
+                index < 4 && (
 
             <div className='card'>
           <div className='imagem'>

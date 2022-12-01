@@ -11,7 +11,8 @@ const Psport = () => {
         <Container>
             <Row>
                 <h2>Sports</h2>
-                {sports.map((item) => (
+                {sports.map((item,index) =>
+                index < 4 &&  (
 
             <div className='card'>
           <div className='imagem'>

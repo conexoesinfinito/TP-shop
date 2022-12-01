@@ -10,22 +10,22 @@ const Bar2 = () => {
         <Carousel fade>
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/1.jpg" alt="A dinosaur" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/1.jpg" alt="imagem" placeholder="blurred"/>
         </div>
         </Carousel.Item>
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/2.jpg" alt="A dinosaur" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/2.jpg" alt="imagem" placeholder="blurred"/>
         </div>
         </Carousel.Item>
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/3.jpg" alt="A dinosaur" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/3.jpg" alt="imagem" placeholder="blurred"/>
         </div>
         </Carousel.Item>
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/4.jpg" alt="A dinosaur" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/4.jpg" alt="imagem" placeholder="blurred"/>
         </div>
         </Carousel.Item>
         </Carousel>

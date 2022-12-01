@@ -3,7 +3,7 @@ import Carousel from 'react-elastic-carousel'
 import { Col, Container,Row } from 'react-bootstrap'
 import './style.css'
 import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
-import pnovidades from '../../dummydate/pnovidades'
+import novidades from '../../dummydate/novidades'
 
 const Novidades = () => {
     const breakPoints=[
@@ -19,7 +19,7 @@ const Novidades = () => {
         <Row>
         <Col lg={12}>
         <Carousel breakPoints={breakPoints} disableArrowsOnEnd={false}>
-        {pnovidades.map((item) => (
+        {novidades.map((item) => (
 
 <div className='card'>
 <div className='imagem'>

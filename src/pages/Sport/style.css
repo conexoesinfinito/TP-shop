@@ -1,0 +1,8 @@
+.sports{
+    width: 100%;
+    padding: 80px 0;
+}
+
+.sports .row{
+    gap: 1.5rem;
+}
