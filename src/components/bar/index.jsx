@@ -9,7 +9,7 @@ const Bar = () => {
        <div className="bar">
         <Container>
             <Row>
-                <Col lg={2}>
+                {/* <Col lg={2}>
                     <button className='it'>
                     <Link to="#tecnologia">Technology</Link>
                     </button>
@@ -28,7 +28,7 @@ const Bar = () => {
                     <button className='it'>
                     <Link to="#">Game</Link>
                     </button>
-                    </Col>
+                    </Col> */}
                     
             </Row>
         </Container>

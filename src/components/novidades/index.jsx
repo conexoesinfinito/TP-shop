@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-elastic-carousel'
-import { Col, Container,Row } from 'react-bootstrap'
+import { Col, Container,Row, Button } from 'react-bootstrap'
 import './style.css'
 import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
 import novidades from '../../dummydate/novidades'
@@ -39,10 +39,8 @@ const Novidades = () => {
 </div>
 </div>
 <div className='overlay'>
-<a href='#' className='Ai'><AiFillShopping/></a> 
-<a href='#'  className='Ai'><AiFillShopping/></a> 
-<a href='#'  className='Ai'><AiFillShopping/></a> 
-</div>
+                  <Button variant="danger">Saber mais...</Button>{' '}
+                </div>
 </div> 
     ))}
       </Carousel>

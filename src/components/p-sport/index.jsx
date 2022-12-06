@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import { StaticImage } from "gatsby-plugin-image"
 import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
-import { Container, Row } from 'react-bootstrap'
+import { Container, Row, Button } from 'react-bootstrap'
 import sports from '../../dummydate/sports'
 
 const Psport = () => {
@@ -32,10 +32,8 @@ const Psport = () => {
             </div>
           </div>
           <div className='overlay'>
-            <a href='#' className='Ai'><AiFillShopping/></a> 
-            <a href='#'  className='Ai'><AiFillShopping/></a> 
-            <a href='#'  className='Ai'><AiFillShopping/></a> 
-          </div>
+                  <Button variant="danger">Saber mais...</Button>{' '}
+                </div>
         </div> 
                 ))}
             </Row>

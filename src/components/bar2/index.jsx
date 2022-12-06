@@ -1,33 +1,34 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import { StaticImage } from "gatsby-plugin-image"
-import './style.css'
+import './style.css' 
+import tsrs from '../../assets/background1.png'
 
 const Bar2 = () => {
   return (
     <>
       <div className="bar2">
         <Carousel fade>
-        <Carousel.Item>
+        {/* <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/1.jpg" alt="imagem" placeholder="blurred"/>
+        <StaticImage src="assets/background1.png" alt="" placeholder="blurred"/>
         </div>
         </Carousel.Item>
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/2.jpg" alt="imagem" placeholder="blurred"/>
+        <StaticImage src="assets/background2.png" alt="" placeholder="blurred"/>
         </div>
-        </Carousel.Item>
+        </Carousel.Item> */}
         <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/3.jpg" alt="imagem" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/3.jpg" alt="" placeholder="blurred"/>
         </div>
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
         <div className="item">
-        <StaticImage src="../../assets/other/4.jpg" alt="imagem" placeholder="blurred"/>
+        <StaticImage src="../../assets/other/4.jpg" alt="" placeholder="blurred"/>
         </div>
-        </Carousel.Item>
+        </Carousel.Item> */}
         </Carousel>
       </div>
     </>

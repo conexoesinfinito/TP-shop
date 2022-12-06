@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
-import { Container,Row } from 'react-bootstrap'
+import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
+import { Container,Row, Button } from 'react-bootstrap'
 import './style.css'
 import sports from '../../dummydate/sports'
 
@@ -31,10 +31,8 @@ const Sport = () => {
             </div>
           </div>
           <div className='overlay'>
-            <a href='#' className='Ai'><AiFillShopping/></a> 
-            <a href='#'  className='Ai'><AiFillShopping/></a> 
-            <a href='#'  className='Ai'><AiFillShopping/></a> 
-          </div>
+                  <Button variant="danger">Saber mais...</Button>{' '}
+                </div>
         </div> 
                 ))}
             </Row>

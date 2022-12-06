@@ -11,8 +11,8 @@ const Header = () => {
        <div className='header'>
        <Container>
             <Row>
-              <Col lg={3}>
-                <div><Link to='/' className='logo'>LOGO</Link></div>
+              <Col lg={2}>
+                <div><Link to='/' className='logo'>SHOP-GO</Link></div>
               </Col>
               <Col lg={6}>
                 <Form className="d-flex">
@@ -28,7 +28,7 @@ const Header = () => {
                 <Button variant="outline-success">Search</Button>
               </Form>
               </Col>
-              <Col lg={3}>
+              <Col lg={4}>
               <Dropdown>
               <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                 LOGIN / REGISTER
@@ -59,6 +59,7 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link href="#link"><Link to="#">PROMOÇÕES</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="#">SERVIÇOS</Link></Nav.Link>
+            {/* <Nav.Link href="#link"><Link to="#">SOBRE</Link></Nav.Link> */}
             <Nav.Link href="#link"><Link to="/Contact">CONTACTO</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
