@@ -17,7 +17,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Home/>
-      <Bar/>
+      {/* <Bar/> */}
       <Novidades/>
       <Tecnologia/>
       <Psport/>

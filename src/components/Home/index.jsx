@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.css'
-import {Carousel} from "react-bootstrap";
+import {Carousel, Container} from "react-bootstrap";
 
 const Home = () => {
   return (
     <>
+        <Container>
       <Carousel fade>
           <Carousel.Item>
             <div className="item it1">
@@ -43,6 +44,7 @@ const Home = () => {
             </div>
           </Carousel.Item>
         </Carousel>
+          </Container>
     </>
   )
 }

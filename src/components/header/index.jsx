@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 import './style.css'
 import { Link } from "gatsby";
-import { Form, Button, Dropdown, Container, Row, Col} from 'react-bootstrap'
+import {AiOutlineSearch} from 'react-icons/ai'
+import { Dropdown, Container, Row, Col} from 'react-bootstrap'
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
 
 const Header = () => {
-  const [searchTerm, setSearchTerm]=useState('');
   return (
     <>
        <div className='header'>
@@ -14,21 +14,15 @@ const Header = () => {
               <Col lg={2}>
                 <div><Link to='/' className='logo'>SHOP-GO</Link></div>
               </Col>
-              <Col lg={6}>
-                <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search  "
-                  className="me-2"
-                  aria-label="Search"
-                  onChange={(event) =>{
-                    setSearchTerm(event.target.value);
-                  }}
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
+              <Col lg={8}>
+                
+              <form className='pesquisa'>
+                <input type="search" id='texto'/>
+                <button className='btn-search'><AiOutlineSearch/></button>
+              </form>
+
               </Col>
-              <Col lg={4}>
+              <Col lg={2}>
               <Dropdown>
               <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                 LOGIN / REGISTER
@@ -59,7 +53,6 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link href="#link"><Link to="#">PROMOÇÕES</Link></Nav.Link>
             <Nav.Link href="#link"><Link to="#">SERVIÇOS</Link></Nav.Link>
-            {/* <Nav.Link href="#link"><Link to="#">SOBRE</Link></Nav.Link> */}
             <Nav.Link href="#link"><Link to="/Contact">CONTACTO</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
