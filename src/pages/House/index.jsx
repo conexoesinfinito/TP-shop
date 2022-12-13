@@ -3,11 +3,16 @@ import Layout from '../../components/layout'
 import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
 import { Container,Row } from 'react-bootstrap'
 import './style.css'
+import PageReader from "../../components/pageReader"
 import house from '../../dummydate/house'
+import img from '../../assets/house.jpg'
 
 const House = () => {
   return (
     <Layout>
+       <PageReader
+      image={img}
+      />
        <div className='house'>
         <Container>
             <Row>

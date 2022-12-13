@@ -1,0 +1,10 @@
+.games{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.games .row{
+    justify-content: center;
+    gap: 1.5rem;
+}
+

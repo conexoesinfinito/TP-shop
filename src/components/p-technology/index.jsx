@@ -1,8 +1,10 @@
 import React from 'react'
 import './style.css'
-import {AiFillStar,AiOutlineStar,AiFillShopping} from 'react-icons/ai'
-import { Container, Row, Button } from 'react-bootstrap'
+import { StaticImage } from "gatsby-plugin-image"
+import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
+import { Container, Row, Button, Col } from 'react-bootstrap'
 import techno from '../../dummydate/techno'
+
 
 
 const Tecnologia = () => {
@@ -10,8 +12,12 @@ const Tecnologia = () => {
 
     <div className='tecnologia ' id='tecnologia'>
     <Container>
-        <Row>
             <h2>Tecnologia</h2>
+        <Row>
+          <div className="img-tech">
+          <StaticImage src='../../assets/tech01.jpg' alt='' placeholder="blurred"/>
+            </div>
+            <div className="card-tech">
             {techno.map((item, index) =>
             index < 4 && (
               <div className='card'>
@@ -36,6 +42,7 @@ const Tecnologia = () => {
                 </div>
               </div> 
             ))}
+            </div>
         </Row>
     </Container>
 </div>

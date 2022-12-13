@@ -2,3 +2,9 @@
     width: 100%;
     padding: 80px 0;
 }
+
+.house .row{
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}

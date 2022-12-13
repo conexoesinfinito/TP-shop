@@ -7,6 +7,26 @@ const sports=[
         newPrice:20000,
         description:''
     },
+
+    {
+        id:10,
+        imagem:'/sports/Skate2.png',
+        title:'Skate2',
+        oldPrice:10000,
+        newPrice:5000,
+        description:''
+    },
+
+   
+    {
+        id:5,
+        imagem:'/sports/Patins linha-preto.png',
+        title:'Patins linha-preto',
+        oldPrice:10000,
+        newPrice:5000,
+        description:''
+    },
+
     {
         id:2,
         imagem:'/sports/bicicleta2.png',
@@ -32,14 +52,6 @@ const sports=[
         description:''
     },
     
-    {
-        id:5,
-        imagem:'/sports/Patins linha-preto.png',
-        title:'Patins linha-preto',
-        oldPrice:10000,
-        newPrice:5000,
-        description:''
-    },
     
     {
         id:6,
@@ -60,6 +72,14 @@ const sports=[
     },
     
     {
+        id:9,
+        imagem:'/sports/Skate1.png',
+        title:'Skate1',
+        oldPrice:10000,
+        newPrice:5000,
+        description:''
+    },
+    {
         id:8,
         imagem:'/sports/Patins quatro-rodas.png',
         title:'Patins quatro-rodas',
@@ -69,14 +89,7 @@ const sports=[
     },
     
     
-    {
-        id:9,
-        imagem:'/sports/Skate1.png',
-        title:'Skate1',
-        oldPrice:10000,
-        newPrice:5000,
-        description:''
-    },
+   
     
     {
         id:10,

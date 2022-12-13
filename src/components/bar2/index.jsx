@@ -9,26 +9,11 @@ const Bar2 = () => {
     <>
       <div className="bar2">
         <Carousel fade>
-        {/* <Carousel.Item>
-        <div className="item">
-        <StaticImage src="assets/background1.png" alt="" placeholder="blurred"/>
-        </div>
-        </Carousel.Item>
-        <Carousel.Item>
-        <div className="item">
-        <StaticImage src="assets/background2.png" alt="" placeholder="blurred"/>
-        </div>
-        </Carousel.Item> */}
         <Carousel.Item>
         <div className="item">
         <StaticImage src="../../assets/other/3.jpg" alt="" placeholder="blurred"/>
         </div>
         </Carousel.Item>
-        {/* <Carousel.Item>
-        <div className="item">
-        <StaticImage src="../../assets/other/4.jpg" alt="" placeholder="blurred"/>
-        </div>
-        </Carousel.Item> */}
         </Carousel>
       </div>
     </>

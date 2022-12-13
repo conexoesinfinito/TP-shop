@@ -1,21 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css'
 import Layout from '../../components/layout'
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
 import { Container,Row, Button } from 'react-bootstrap'
 import techno from '../../dummydate/techno'
 import Modal from 'react-bootstrap/Modal';
+import PageReader from '../../components/pageReader'
+import img from '../../assets/technology.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const Technology = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <Layout>
+      <PageReader
+      image={img}
+      />
         <div className='technology'>
         <Container>
-            <Row>
+            <Row data-aos="fade-up">
             {techno.map((item) => (
               <>
               <div className='card'>

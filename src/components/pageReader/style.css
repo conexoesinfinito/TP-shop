@@ -1,0 +1,11 @@
+.pageReader{
+    height: 60vh;
+    position: relative;
+}
+.page_reader_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

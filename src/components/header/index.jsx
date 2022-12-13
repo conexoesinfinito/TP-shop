@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './style.css'
 import { Link } from "gatsby";
-import {AiOutlineSearch} from 'react-icons/ai'
+import {AiOutlineSearch, AiFillShopping} from 'react-icons/ai'
 import { Dropdown, Container, Row, Col} from 'react-bootstrap'
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
 
@@ -11,10 +11,10 @@ const Header = () => {
        <div className='header'>
        <Container>
             <Row>
-              <Col lg={2}>
+              <Col lg={2} className='flex'>
                 <div><Link to='/' className='logo'>SHOP-GO</Link></div>
               </Col>
-              <Col lg={8}>
+              <Col lg={7}>
                 
               <form className='pesquisa'>
                 <input type="search" id='texto'/>
@@ -33,6 +33,9 @@ const Header = () => {
               </Dropdown.Menu>
             </Dropdown>
               </Col>
+              <Col lg={1}>
+                <a href="" className='icon-shop'><i><AiFillShopping/></i></a>
+              </Col>
           </Row>
         </Container>
        </div>
@@ -48,7 +51,7 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Item><Link to="/Sport">SPORTS</Link></NavDropdown.Item>
               <NavDropdown.Item>
-              <Link to="#">GAME</Link>
+              <Link to="/Game">GAME</Link>
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#link"><Link to="#">PROMOÇÕES</Link></Nav.Link>

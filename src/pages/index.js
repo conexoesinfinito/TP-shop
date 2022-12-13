@@ -1,5 +1,4 @@
 import * as React from "react"
-import Bar from "../components/bar"
 import Bar2 from "../components/bar2"
 import Home from "../components/home"
 import Layout from "../components/Layout"
@@ -17,7 +16,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Home/>
-      {/* <Bar/> */}
       <Novidades/>
       <Tecnologia/>
       <Psport/>

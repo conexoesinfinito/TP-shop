@@ -2,12 +2,17 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
 import { Container,Row, Button } from 'react-bootstrap'
-import './style.css'
 import sports from '../../dummydate/sports'
+import image from '../../assets/sport.jpg'
+import PageReader from '../../components/pageReader'
+import './style.css'
 
 const Sport = () => {
   return (
     <Layout>
+      <PageReader
+      image={image}
+      />
         <div className='sports'>
         <Container>
             <Row>

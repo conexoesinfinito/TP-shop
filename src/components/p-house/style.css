@@ -4,5 +4,6 @@
 }
 
 .p-house .row{
-    gap: 1rem;
+    
+    justify-content: space-between;
 }
