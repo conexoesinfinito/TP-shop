@@ -1,4 +1,6 @@
-import * as React from "react"
+import React, {useEffect } from 'react'
+import AOS from "aos"
+import "aos/dist/aos.css"
 import { Container, Row } from 'react-bootstrap'
 import Card from '../../components/card'
 import Layout from "../../components/Layout"
@@ -8,6 +10,10 @@ import img from '../../assets/game.jpg'
 import './style.css'
 
 const Game = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <Layout>
       <PageReader
@@ -15,10 +21,9 @@ const Game = () => {
       />
     <div className='games'>
         <Container>
-            <Row>
+            <Row data-aos="fade-up">
             {game.map((item) => 
-            (
-                
+            ( 
                 <Card
                 imagem={item.imagem}
                 title={item.title}

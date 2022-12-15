@@ -1,9 +1,7 @@
 .p-house{
     width: 100%;
-    padding: 50px 0;
 }
 
 .p-house .row{
-    
     justify-content: space-between;
 }

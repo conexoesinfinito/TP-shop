@@ -1,7 +1,7 @@
 
 .item{
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,22 +11,17 @@
 
 }
 .it1{
-    background-image: url(../../assets/background1.png);
+    background-image: url(../../assets/background01.jpg);
     background-size: cover;
     background-position: center;
 }
 .it2{
-    background-image: url(../../assets/background2.png);
+    background-image: url(../../assets/background02.jpg);
     background-size: cover;
     background-position: center;
 }
 .it3{
-    background-image: url(../../assets/background3.png);
-    background-size: cover;
-    background-position: center;
-}
-.it4{
-    background-image: url(../../assets/background5.png);
+    background-image: url(../../assets/background03.jpg);
     background-size: cover;
     background-position: center;
 }

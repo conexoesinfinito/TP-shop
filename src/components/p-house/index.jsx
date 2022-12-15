@@ -1,41 +1,26 @@
 import React from 'react'
-import './style.css'
-import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
-import { Container, Row, Button } from 'react-bootstrap'
+import { Container, Row} from 'react-bootstrap'
 import house from '../../dummydate/house'
+import Card from '../../components/card'
+import './style.css'
 
 const Phouse = () => {
   return (
 
 
-<div className='p-house' id='house'>
+<div className='p-house padding' id='house'>
         <Container>
             <Row>
                 <h2>House</h2>
                 {house.map((item,index) => 
                 index < 4 && (
-
-            <div className='card'>
-          <div className='imagem'>
-          <img src={item.imagem} alt="computador"/>
-          </div>
-        <div className='info' key={item.id}>
-            <h3 className='title'>{item.title}</h3>
-            <div className='sub-info'>
-              <div className='preco'>{item.newPrice} <span>{item.oldPrice}</span></div>
-              <div className='stars'>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i><AiOutlineStar/></i>
-              </div>
-            </div>
-          </div>
-          <div className='overlay'>
-                  <Button variant="danger">Saber mais...</Button>{' '}
-                </div>
-        </div> 
+                  <Card
+                  imagem={item.imagem}
+                  title={item.title}
+                  newPrice={item.newPrice}
+                  oldPrice={item.oldPrice}
+                  />
+                    
                 ))}
             </Row>
         </Container>

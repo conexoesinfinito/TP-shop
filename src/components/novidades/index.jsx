@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import { Col, Container, Row, Button } from "react-bootstrap";
-import "./style.css";
-import { AiFillStar, AiOutlineStar, AiFillShopping } from "react-icons/ai";
+import { Col, Container, Row} from "react-bootstrap";
 import novidades from "../../dummydate/novidades";
+import Card from '../../components/card'
+import "./style.css";
 
 const Novidades = () => {
   const breakPoints = [
@@ -13,46 +13,19 @@ const Novidades = () => {
     { width: 1500, itemsToShow: 5 },
   ];
   return (
-    <div className="novidades" id="novidades">
+    <div className="novidades padding" id="novidades">
       <Container>
         <h2>Novidades</h2>
         <Row>
           <Col lg={12}>
             <Carousel breakPoints={breakPoints} disableArrowsOnEnd={false}>
               {novidades.map((item) => (
-                <div className="card">
-                  <div className="imagem">
-                    <img src={item.imagem} alt="computador" />
-                  </div>
-                  <div className="info" key={item.id}>
-                    <h3 className="title">{item.title}</h3>
-                    <div className="sub-info">
-                      <div className="preco">
-                        {item.newPrice} <span>{item.oldPrice}</span>
-                      </div>
-                      <div className="stars">
-                        <i className="Ai">
-                          <AiFillStar />
-                        </i>
-                        <i className="Ai">
-                          <AiFillStar />
-                        </i>
-                        <i className="Ai">
-                          <AiFillStar />
-                        </i>
-                        <i className="Ai">
-                          <AiFillStar />
-                        </i>
-                        <i>
-                          <AiOutlineStar />
-                        </i>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="overlay">
-                    <Button variant="danger">Saber mais...</Button>{" "}
-                  </div>
-                </div>
+                <Card
+                imagem={item.imagem}
+                title={item.title}
+                newPrice={item.newPrice}
+                oldPrice={item.oldPrice}
+                />
               ))}
             </Carousel>
           </Col>

@@ -1,0 +1,7 @@
+.p-geme{
+    width: 100%;
+}
+
+.p-game .row{
+    justify-content: space-between;
+}

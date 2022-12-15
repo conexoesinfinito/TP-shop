@@ -1,44 +1,35 @@
-import React from 'react'
+import React, {useEffect } from 'react'
+import AOS from "aos"
+import "aos/dist/aos.css"
 import Layout from '../../components/Layout'
-import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
-import { Container,Row, Button } from 'react-bootstrap'
+import { Container,Row} from 'react-bootstrap'
 import sports from '../../dummydate/sports'
 import image from '../../assets/sport.jpg'
 import PageReader from '../../components/pageReader'
+import Card from '../../components/card'
 import './style.css'
 
 const Sport = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <Layout>
       <PageReader
       image={image}
       />
-        <div className='sports'>
+        <div className='sports padding'>
         <Container>
-            <Row>
+            <Row data-aos="fade-up">
                 {sports.map((item) => (
 
-            <div className='card'>
-          <div className='imagem'>
-          <img src={item.imagem} alt="imagem"/>
-          </div>
-        <div className='info' key={item.id}>
-            <h3 className='title'>{item.title}</h3>
-            <div className='sub-info'>
-              <div className='preco'>{item.newPrice} <span>{item.oldPrice}</span></div>
-              <div className='stars'>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i className='Ai'><AiFillStar/></i>
-                <i><AiOutlineStar/></i>
-              </div>
-            </div>
-          </div>
-          <div className='overlay'>
-                  <Button variant="danger">Saber mais...</Button>{' '}
-                </div>
-        </div> 
+            <Card
+            imagem={item.imagem}
+            title={item.title}
+            newPrice={item.newPrice}
+            oldPrice={item.oldPrice}
+            />
                 ))}
             </Row>
         </Container>

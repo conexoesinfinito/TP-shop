@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import './style.css'
+import React, {useEffect } from 'react'
 import Layout from '../../components/layout'
-import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
-import { Container,Row, Button } from 'react-bootstrap'
+import { Container,Row} from 'react-bootstrap'
 import techno from '../../dummydate/techno'
-import Modal from 'react-bootstrap/Modal';
 import PageReader from '../../components/pageReader'
 import img from '../../assets/technology.jpg'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Card from '../../components/card'
+import AOS from "aos"
+import "aos/dist/aos.css"
+import './style.css'
 
 
 
@@ -18,63 +17,22 @@ const Technology = () => {
     AOS.init();
     AOS.refresh();
   }, []);
-
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
     <Layout>
       <PageReader
       image={img}
       />
-        <div className='technology'>
+        <div className='technology padding'>
         <Container>
             <Row data-aos="fade-up">
             {techno.map((item) => (
               <>
-              <div className='card'>
-                <div className='imagem'>
-              <img src={item.imagem} alt="imagem"/>
-                </div>
-              <div className='info' key={item.id}>
-              <h3 className='title'>{item.title}</h3>
-              <div className='sub-info'>
-                <div className='preco'>{item.newPrice} <span>{item.oldPrice}</span></div>
-                <div className='stars'>
-                  <i className='Ai'><AiFillStar/></i>
-                  <i className='Ai'><AiFillStar/></i>
-                  <i className='Ai'><AiFillStar/></i>
-                  <i className='Ai'><AiFillStar/></i>
-                  <i><AiOutlineStar/></i>
-                </div>
-              </div>
-            </div>
-            <div className='overlay'>
-              <Button variant="danger" onClick={handleShow}>Saber mais...</Button>{' '}
-                  </div>
-          </div> 
-          
-          <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-          <Modal.Title>
-            {item.title}
-          </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-          <div className="md">
-              <div className="cont-img">
-              <img src={item.imagem} alt="imagem"/>
-              </div>
-              <div className="cont-inf">
-              {item.newPrice}
-              {item.oldPrice}
-              </div>
-            </div>
-            </Modal.Body>
-            <Modal.Footer>
-            {item.description}
-            </Modal.Footer>
-        </Modal>
+              <Card
+                imagem={item.imagem}
+                title={item.title}
+                newPrice={item.newPrice}
+                oldPrice={item.oldPrice}
+                />
         </> ))}
                 </Row>
         </Container>
