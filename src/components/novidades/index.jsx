@@ -15,7 +15,7 @@ const Novidades = () => {
   return (
     <div className="novidades padding" id="novidades">
       <Container>
-        <h2>Novidades</h2>
+        {/* <h2>Novidades</h2> */}
         <Row>
           <Col lg={12}>
             <Carousel breakPoints={breakPoints} disableArrowsOnEnd={false}>

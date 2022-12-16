@@ -12,7 +12,7 @@ const Tecnologia = () => {
 
     <div className='tecnologia padding' id='tecnologia'>
     <Container>
-            <h2>Tecnologia</h2>
+            {/* <h2>Tecnologia</h2> */}
         <Row>
           <div className="img-tech">
           <StaticImage src='../../assets/tech01.jpg' alt='' placeholder="blurred"/>

@@ -1,12 +1,17 @@
 .bar2{
     width: 100%;
-    transition: all .3s ease;
-}
-
-.bar2 .item{
-    width: 100%;
     height: 40vh;
-    object-fit: cover;
+    background-image: url(../../assets/other/3.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* 
+.bar2 img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+} */
+
+
+
+

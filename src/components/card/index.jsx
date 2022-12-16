@@ -25,7 +25,7 @@ const Card = (props) => {
             </div>
           </div>
           <div className='overlay'>
-                  <Button variant="danger" onClick={() => setShow(true)}>Saber mais...</Button>{' '}
+                  <Button variant="danger" onClick={() => setShow(true)}>Saber mais</Button>{' '}
                 </div>
         </div>
 

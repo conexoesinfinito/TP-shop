@@ -11,7 +11,7 @@ const Phouse = () => {
 <div className='p-house padding' id='house'>
         <Container>
             <Row>
-                <h2>House</h2>
+                {/* <h2>House</h2> */}
                 {house.map((item,index) => 
                 index < 4 && (
                   <Card

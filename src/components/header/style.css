@@ -124,3 +124,31 @@ a:hover{
     
 
 }
+
+.dropdowns{
+    z-index: 11;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid gray;
+}
+
+.dropdowns:empty{
+    border: none;
+}
+
+.dropdowns-row{
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+}
+
+input{
+    width: 220px;
+}
+
+.search-inner{
+    display: flex;
+}

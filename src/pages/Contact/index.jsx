@@ -7,6 +7,11 @@ import './style.css'
 const Contact = () => {
   return (
     <div className='contact'>
+      <div class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
         <Container>
             <Row>
             <Col lg={4} className="left-side" >

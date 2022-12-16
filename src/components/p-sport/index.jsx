@@ -10,7 +10,7 @@ const Psport = () => {
   return (
     <div className='p-sport padding' id='sport'>
         <Container>
-                <h2>Sports</h2>
+                {/* <h2>Sports</h2> */}
             <Row>
               <div className="card-sport">
                 {sports.map((item,index) =>

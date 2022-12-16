@@ -1,11 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './style.css'
+import Card from '../../components/card'
 import { Link } from "gatsby";
 import {AiOutlineSearch, AiFillShopping} from 'react-icons/ai'
 import { Dropdown, Container, Row, Col} from 'react-bootstrap'
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
+import sports from '../../dummydate/sports';
 
 const Header = () => {
+  const [value, setValue] = useState('');
+  const onChange =(event) =>{
+    setValue(event.target.value);
+  }
+  const onSearch=(searchTerm)=>{
+    setValue(searchTerm);
+  }
   return (
     <>
        <div className='header'>
@@ -17,7 +26,7 @@ const Header = () => {
               <Col lg={7}>
                 
               <form className='pesquisa'>
-                <input type="search" id='texto'/>
+                <input type="search" id='texto' value={value} onChange={onChange}/>
                 <button className='btn-search'><AiOutlineSearch/></button>
               </form>
 
@@ -61,6 +70,22 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div className="dropdowns">
+      {sports.filter(item =>{
+        const searchTerm = value.toLowerCase();
+        const titleName =item.title.toLowerCase();
+        return searchTerm && titleName.startsWith(searchTerm) && titleName !== searchTerm; 
+      })
+      .slice(0,10)
+      .map((item) => (<div onClick={()=>onSearch(item.title)}className='dropdowns-row' key={item.title}>
+      <Card
+                  imagem={item.imagem}
+                  title={item.title}
+                  newPrice={item.newPrice}
+                  oldPrice={item.oldPrice}
+                  />
+        </div>))}
+    </div>
     </>
   )
 }
