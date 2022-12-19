@@ -3,15 +3,12 @@ import { Link } from 'gatsby'
 import {Container, Row, Col} from 'react-bootstrap'
 import {ImLocation, ImPhone, ImEnvelop} from 'react-icons/im'
 import './style.css'
+import Layout from '../../components/layout'
 
 const Contact = () => {
   return (
-    <div className='contact'>
-      <div class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-      </div>
+       <Layout>
+       <div className='contact'>
         <Container>
             <Row>
             <Col lg={4} className="left-side" >
@@ -63,6 +60,7 @@ const Contact = () => {
         </Container>
       
     </div>
+        </Layout>
   )
 }
 

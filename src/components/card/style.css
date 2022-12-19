@@ -8,9 +8,9 @@
     transition: .3s ease;
     border: 1px solid rgb(228, 228, 228);
 }
-.card:hover{
+/* .card:hover{
     transform: translateY(-20px);
-}
+} */
 
 .card .imagem{
     width: 220px;
@@ -18,13 +18,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 }
+.card:hover img{
+    transform: scale(1.5) rotate(-45deg);
+}
+.card img{
+    transition: .5s ease;
+}
+
+
 
 .card .imagem img{
     padding: 5px; 
     max-width: 100%;
 }
+
 
 
 .card .info .title{
