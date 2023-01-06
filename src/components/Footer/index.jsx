@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='footer'>
       <Container>
         <Row>
-        <Col lg={4} className='lg'>
+        <Col lg={6} className='lg'>
           <h4>SHOP-GO</h4>
           <h6>Contact</h6>
           <div className="contac">
@@ -38,11 +38,11 @@ const Footer = () => {
           <Link to="#">Game</Link>
 
           </Col>
-        <Col lg={3} className='lg'>
+        <Col lg={2} className='lg'>
          <h4>BLOG</h4>
          <Link to="#">Technology</Link>
           </Col>
-        <Col lg={3} className='lg'>
+        <Col lg={2} className='lg'>
          <h4>INSTALL APP</h4>
          <h6>From App Store or Google Play</h6>
           <div className="app">

@@ -4,9 +4,9 @@ import "aos/dist/aos.css"
 import Layout from '../../components/layout'
 import { Container,Row } from 'react-bootstrap'
 import PageReader from "../../components/pageReader"
-import house from '../../dummydate/house'
 import img from '../../assets/house.jpg'
 import Card from '../../components/card'
+import Data from '../../components/data'
 import './style.css'
 
 const House = () => {
@@ -22,7 +22,7 @@ const House = () => {
        <div className='house padding'>
         <Container>
             <Row data-aos="fade-up">
-                {house.map((item) => (
+                {Data.house.map((item) => (
 
             <Card
             imagem={item.imagem}

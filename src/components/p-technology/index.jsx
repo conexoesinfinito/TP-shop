@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row} from 'react-bootstrap'
-import techno from '../../dummydate/techno'
 import Card from '../../components/card'
+import Data from '../data'
 import './style.css'
 
 
@@ -18,7 +18,7 @@ const Tecnologia = () => {
           <StaticImage src='../../assets/tech01.jpg' alt='' placeholder="blurred"/>
             </div>
             <div className="card-tech">
-            {techno.map((item, index) =>
+            {Data.techno.map((item, index) =>
             index < 4 && (
               <Card
               imagem={item.imagem}

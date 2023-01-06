@@ -1,11 +1,12 @@
 import React,{useState} from 'react'
-import './style.css'
 import Card from '../../components/card'
 import { Link } from "gatsby";
 import {AiOutlineSearch, AiFillShopping} from 'react-icons/ai'
 import { Dropdown, Container, Row, Col} from 'react-bootstrap'
 import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
-import sports from '../../dummydate/sports';
+import Data from '../data';
+import './style.css'
+
 
 const Header = () => {
   const [value, setValue] = useState('');
@@ -71,7 +72,7 @@ const Header = () => {
       </Container>
     </Navbar>
     <div className="dropdowns">
-      {sports.filter(item =>{
+      {Data.game.filter(item =>{
         const searchTerm = value.toLowerCase();
         const titleName =item.title.toLowerCase();
         return searchTerm && titleName.startsWith(searchTerm) && titleName !== searchTerm; 
@@ -85,6 +86,7 @@ const Header = () => {
                   oldPrice={item.oldPrice}
                   />
         </div>))}
+      
     </div>
     </>
   )

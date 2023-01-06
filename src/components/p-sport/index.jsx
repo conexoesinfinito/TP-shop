@@ -1,8 +1,8 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row,} from 'react-bootstrap'
-import sports from '../../dummydate/sports'
 import Card from '../../components/card'
+import Data from '../data'
 import './style.css'
 
 
@@ -13,7 +13,7 @@ const Psport = () => {
                 {/* <h2>Sports</h2> */}
             <Row>
               <div className="card-sport">
-                {sports.map((item,index) =>
+                {Data.sports.map((item,index) =>
                 index < 4 &&  (
                   <Card
                   imagem={item.imagem}

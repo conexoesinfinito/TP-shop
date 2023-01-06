@@ -5,9 +5,10 @@ import { Container, Row } from 'react-bootstrap'
 import Card from '../../components/card'
 import Layout from "../../components/Layout"
 import PageReader from "../../components/pageReader"
-import game from '../../dummydate/game'
 import img from '../../assets/game.jpg'
 import './style.css'
+import Data from '../../components/data'
+
 
 const Game = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Game = () => {
     <div className='games'>
         <Container>
             <Row data-aos="fade-up">
-            {game.map((item) => 
+            {Data.game.map((item) => 
             ( 
                 <Card
                 imagem={item.imagem}

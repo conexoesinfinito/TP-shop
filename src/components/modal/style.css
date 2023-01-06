@@ -1,0 +1,60 @@
+.pop-up-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0,.5);
+    padding-top:5%;
+    z-index: 1;
+}
+
+.pop-up-body{
+    width: 60%;
+    height: 85%;
+    background: #fff;
+    margin: auto;
+}
+
+.pop-up-header{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: right;
+}
+.pop-up-header button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: red;
+}
+
+.pop-img{
+    width: 50%;
+}
+.pop-img img{
+    width: 80;
+    background-color: black;
+}
+
+.pop-conteudo{
+    width: 50%;
+}
+
+.ct{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.ct button{
+    border: none;
+    padding: .5rem;
+    color: #fff;
+    background: red;
+    font-weight: 500;
+}
+
+.ct input{
+    width: 100px;
+}

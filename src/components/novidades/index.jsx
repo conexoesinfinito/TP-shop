@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import { Col, Container, Row} from "react-bootstrap";
-import novidades from "../../dummydate/novidades";
 import Card from '../../components/card'
+import Data from "../data";
 import "./style.css";
 
 const Novidades = () => {
@@ -19,7 +19,7 @@ const Novidades = () => {
         <Row>
           <Col lg={12}>
             <Carousel breakPoints={breakPoints} disableArrowsOnEnd={false}>
-              {novidades.map((item) => (
+              {Data.novidades.map((item) => (
                 <Card
                 imagem={item.imagem}
                 title={item.title}

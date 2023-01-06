@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row} from 'react-bootstrap'
-import house from '../../dummydate/house'
 import Card from '../../components/card'
+import Data from '../data'
 import './style.css'
 
 const Phouse = () => {
@@ -12,7 +12,7 @@ const Phouse = () => {
         <Container>
             <Row>
                 {/* <h2>House</h2> */}
-                {house.map((item,index) => 
+                {Data.house.map((item,index) => 
                 index < 4 && (
                   <Card
                   imagem={item.imagem}

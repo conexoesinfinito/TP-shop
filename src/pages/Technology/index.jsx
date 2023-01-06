@@ -1,12 +1,12 @@
 import React, {useEffect } from 'react'
 import Layout from '../../components/layout'
 import { Container,Row} from 'react-bootstrap'
-import techno from '../../dummydate/techno'
 import PageReader from '../../components/pageReader'
 import img from '../../assets/technology.jpg'
 import Card from '../../components/card'
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Data from '../../components/data'
 import './style.css'
 
 
@@ -25,7 +25,7 @@ const Technology = () => {
         <div className='technology padding'>
         <Container>
             <Row data-aos="fade-up">
-            {techno.map((item) => (
+            {Data.techno.map((item) => (
               <>
               <Card
                 imagem={item.imagem}
